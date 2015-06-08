@@ -474,21 +474,20 @@
                 <h4 class="modal-title" id="myModalLabel">Sign in</h4>
             </div>
             <div class="modal-body">
-                <form>
                     <div class="form-group">
 
-                        <label>USername</label><br>
-                        <input type="text">
+                        <label>Username</label><br>
+                        <input type="text" id="username_SI">
 
                     </div>
                     <div class="form-group">
 
                         <label>Password</label><br>
-                        <input type="password">
+                        <input type="password" id="password_SI">
 
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-success">Sign in</button>
+                        <button class="btn btn-success" id="singin">Sign in</button>
                         <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal" data-dismiss="modal">
                             <h5>I don't have an account</h5>
                         </a>
@@ -587,8 +586,25 @@ ga('send', 'pageview');
             });
     });
 
+    $("#singin").onClick(function()){
+        
+        var user = $("#username_SI").val();
+        var pass = $("#password_SI").val();
+
+        if (user == "alumno@gmail.com"){
+            window.location = "http://www.google.com/"
+        }else if (user == "teacher@gmail.com"){
+            window.location = "http://www.google.com/"
+        }else if (user == "space@gmail.com"){
+            window.location = "http://www.google.com/"
+        }
+
+    }
+
 });
 }(jQuery));
+
+
 
 </script>
 

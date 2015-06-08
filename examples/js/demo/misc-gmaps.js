@@ -35,13 +35,13 @@ $(document).ready(function() {
 			$.niftyNoty({
 				type: "info",
 				icon: "fa fa-info",
-				message: "You clicked in the marker",
+				message: "You clicked in the Arduino course",
 				container: 'floating',
 				timer: 3500
 			});
 		},
 		infoWindow: {
-			 content: '<div>HTML Content</div>'
+			 content: '<div>Arduino</div>'
 		}
 	});
 

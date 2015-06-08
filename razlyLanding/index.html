@@ -586,20 +586,20 @@ ga('send', 'pageview');
             });
     });
 
-    $("#singin").onClick(function()){
+    $("#singin").click(function(){
         
         var user = $("#username_SI").val();
         var pass = $("#password_SI").val();
 
-        if (user == "alumno@gmail.com"){
-            window.location = "http://www.google.com/"
+        if (user == "student@gmail.com"){
+            window.location = "../examples/alumno.html"
         }else if (user == "teacher@gmail.com"){
-            window.location = "http://www.google.com/"
+            window.location = "../examples/instructor.html"
         }else if (user == "space@gmail.com"){
-            window.location = "http://www.google.com/"
+            window.location = "../examples/lugar.html"
         }
 
-    }
+    });
 
 });
 }(jQuery));
